@@ -14,7 +14,7 @@ const bookingsRouter = require('./routes/bookings');
 const app = express();
 
 const cors = require('cors');
-app.use(cors());
+app.use(cors({ "Access-Control-Allow-Origin": "https://ouioui-front.vercel.app/" }));
 
 app.use(logger('dev'));
 app.use(express.json());
